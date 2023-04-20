@@ -1,11 +1,14 @@
 # Client-Server-Hangman-in-C
 Client/Server Hangman in C with sockets libraries
 
+To proper use the program you have to dowload the whole repository. After that you have to make the executable files of cliente.c and servidor.c by using
+the Makefile.
 
-Hemos implementado los objetivos extra 1,2 y 4. Para el primer objetivo hemos creado con símbolos los diferentes estados que puede tomar el "ahorcado"
-con respecto a las vidas que les quedan a los jugadores para posteriormente printearselos.
-Para el segundo objetivo solicitamos al usuario en el servidor que elija el número de jugadores que va a tener la partida. Para esto hemos creado un for
-que a medida que avanza la partida le asigna a cada jugador su turno y que dentro tiene más bucles for que infoman de cada acción a los jugadores.
-Para el último objetivo realizado hemos creado una tabla de booleanos que almacena al final de la partida si cada jugador quiere continuar y un booleano que
-almacena si se va a volver a jugar o no. En el cliente hemos implementado que si quiere volver a jugar espere una respuesta del servidor que va a ser
-una nueva partida o el final de la partida en función de si el resto de jugadores quieren continuar o no.
+Once you have the both executables you have to execute servidor.c in your terminal introducing the IP and port number also. After the server is created it will ask
+to the user how many players he wants to play with and the word to guess.
+
+When you are done doing this you have to open as many termianls as players you chose before and execute cliente.c introducing the same IP and port number as before.
+After all this you are ready to play your online multiplayer hangman.
+
+All players share lives and after the lives are empty or the players win the game they will be requested if they want to play another time. If all players says
+yes another game will be performed. If not all players are kicked out from the server and the server closes itself.
