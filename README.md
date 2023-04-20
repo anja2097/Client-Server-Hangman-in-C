@@ -5,7 +5,7 @@ To proper use the program you have to dowload the whole repository. After that y
 the Makefile.
 
 Once you have the both executables you have to execute servidor.c in your terminal introducing the IP and port number also. After the server is created it will ask
-to the user how many players he wants to play with and the word to guess.
+to the user how many players he wants to play with and the 10 words to guess.
 
 When you are done doing this you have to open as many termianls as players you chose before and execute cliente.c introducing the same IP and port number as before.
 After all this you are ready to play your online multiplayer hangman.
